@@ -62,12 +62,12 @@
 		614700A424E2C9D300C58F7A /* MusicApp_Design Pattern */ = {
 			isa = PBXGroup;
 			children = (
+				614700C224E2DB8600C58F7A /* View */,
 				614700BE24E2D69400C58F7A /* API */,
 				614700B924E2D1D000C58F7A /* Models */,
+				614700C124E2DB3700C58F7A /* Controller */,
 				614700A524E2C9D300C58F7A /* AppDelegate.swift */,
 				614700A724E2C9D300C58F7A /* SceneDelegate.swift */,
-				614700A924E2C9D300C58F7A /* ViewController.swift */,
-				614700BC24E2D5E500C58F7A /* AlbumView.swift */,
 				614700AB24E2C9D300C58F7A /* Main.storyboard */,
 				614700AE24E2C9D600C58F7A /* Assets.xcassets */,
 				614700B024E2C9D600C58F7A /* LaunchScreen.storyboard */,
@@ -90,6 +90,22 @@
 				614700BF24E2D6AA00C58F7A /* HTTPClient.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		614700C124E2DB3700C58F7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				614700A924E2C9D300C58F7A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		614700C224E2DB8600C58F7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				614700BC24E2D5E500C58F7A /* AlbumView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
