@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 final class PersistencyManager {
 
     private var albums = [Album]()
