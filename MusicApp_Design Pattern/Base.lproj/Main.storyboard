@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-Be-VO8">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-Be-VO8" customClass="HorizontalScrollerView" customModule="MusicApp_Design_Pattern" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="414" height="120"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -81,6 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pop Music" id="vgb-xY-lLe"/>
                     <connections>
+                        <outlet property="horizontalScrollerView" destination="TFz-Be-VO8" id="TnO-IY-RlA"/>
                         <outlet property="tableView" destination="mVT-B0-Rr9" id="At9-tD-AXP"/>
                         <outlet property="trashBarButtonItem" destination="MkN-zB-XUh" id="iTU-KR-3Yi"/>
                         <outlet property="undoBarButtonItem" destination="yYV-Wy-udr" id="3v3-Oe-cjR"/>

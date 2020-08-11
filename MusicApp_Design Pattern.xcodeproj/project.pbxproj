@@ -18,6 +18,7 @@
 		614700C024E2D6AA00C58F7A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614700BF24E2D6AA00C58F7A /* HTTPClient.swift */; };
 		614700C524E2E60A00C58F7A /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614700C424E2E60A00C58F7A /* LibraryAPI.swift */; };
 		614700C724E2E65A00C58F7A /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614700C624E2E65A00C58F7A /* PersistencyManager.swift */; };
+		614700C924E2F68100C58F7A /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614700C824E2F68100C58F7A /* HorizontalScrollerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		614700BF24E2D6AA00C58F7A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		614700C424E2E60A00C58F7A /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		614700C624E2E65A00C58F7A /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		614700C824E2F68100C58F7A /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				614700BC24E2D5E500C58F7A /* AlbumView.swift */,
+				614700C824E2F68100C58F7A /* HorizontalScrollerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				614700AA24E2C9D300C58F7A /* ViewController.swift in Sources */,
 				614700A624E2C9D300C58F7A /* AppDelegate.swift in Sources */,
+				614700C924E2F68100C58F7A /* HorizontalScrollerView.swift in Sources */,
 				614700C024E2D6AA00C58F7A /* HTTPClient.swift in Sources */,
 				614700A824E2C9D300C58F7A /* SceneDelegate.swift in Sources */,
 				614700BD24E2D5E500C58F7A /* AlbumView.swift in Sources */,

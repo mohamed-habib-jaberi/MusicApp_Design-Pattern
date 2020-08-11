@@ -9,8 +9,6 @@
 import UIKit
 
 
-
-
 class ViewController: UIViewController {
     
     private enum Constants {
@@ -20,6 +18,8 @@ class ViewController: UIViewController {
      @IBOutlet var tableView: UITableView!
      @IBOutlet var undoBarButtonItem: UIBarButtonItem!
      @IBOutlet var trashBarButtonItem: UIBarButtonItem!
+    
+    @IBOutlet var horizontalScrollerView: HorizontalScrollerView!
     
     private var currentAlbumIndex = 0
     private var currentAlbumData: [AlbumData]?
@@ -33,6 +33,11 @@ class ViewController: UIViewController {
 
         //2
         tableView.dataSource = self
+        
+        horizontalScrollerView.dataSource = self
+        horizontalScrollerView.delegate = self
+        horizontalScrollerView.reload()
+
         
         showDataForAlbum(at: currentAlbumIndex)
 
@@ -79,4 +84,38 @@ extension ViewController: UITableViewDataSource {
     }
     
 
+}
+
+// MARK: - HorizontalScrollerViewDelegate
+extension ViewController: HorizontalScrollerViewDelegate {
+  func horizontalScrollerView(_ horizontalScrollerView: HorizontalScrollerView, didSelectViewAt index: Int) {
+    //1
+    let previousAlbumView = horizontalScrollerView.view(at: currentAlbumIndex) as! AlbumView
+    previousAlbumView.highlightAlbum(false)
+    //2
+    currentAlbumIndex = index
+    //3
+    let albumView = horizontalScrollerView.view(at: currentAlbumIndex) as! AlbumView
+    albumView.highlightAlbum(true)
+    //4
+    showDataForAlbum(at: index)
+  }
+}
+
+// MARK: - HorizontalScrollerViewDataSource
+extension ViewController: HorizontalScrollerViewDataSource {
+  func numberOfViews(in horizontalScrollerView: HorizontalScrollerView) -> Int {
+    return allAlbums.count
+  }
+  
+  func horizontalScrollerView(_ horizontalScrollerView: HorizontalScrollerView, viewAt index: Int) -> UIView {
+    let album = allAlbums[index]
+    let albumView = AlbumView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), coverUrl: album.coverUrl)
+    if currentAlbumIndex == index {
+      albumView.highlightAlbum(true)
+    } else {
+      albumView.highlightAlbum(false)
+    }
+    return albumView
+  }
 }
