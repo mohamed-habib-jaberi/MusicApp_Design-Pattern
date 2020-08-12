@@ -10,7 +10,7 @@
         <!--Pop Music-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicApp_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MusicApp_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
         <!--Navigation Controller-->
         <scene sceneID="JWT-RY-IkA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uar-4E-9Fi" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="uar-4E-9Fi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mie-BY-vcq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

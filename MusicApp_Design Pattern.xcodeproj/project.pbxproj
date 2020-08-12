@@ -20,6 +20,7 @@
 		614700C724E2E65A00C58F7A /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614700C624E2E65A00C58F7A /* PersistencyManager.swift */; };
 		614700C924E2F68100C58F7A /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614700C824E2F68100C58F7A /* HorizontalScrollerView.swift */; };
 		614700CC24E32BA000C58F7A /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614700CB24E32BA000C58F7A /* NotificationExtension.swift */; };
+		614700D024E3716100C58F7A /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 614700CF24E3716100C58F7A /* albums.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		614700C624E2E65A00C58F7A /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		614700C824E2F68100C58F7A /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 		614700CB24E32BA000C58F7A /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		614700CF24E3716100C58F7A /* albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		614700A424E2C9D300C58F7A /* MusicApp_Design Pattern */ = {
 			isa = PBXGroup;
 			children = (
+				614700CE24E3714B00C58F7A /* JSON File */,
 				614700CA24E32B7900C58F7A /* Extension */,
 				614700C224E2DB8600C58F7A /* View */,
 				614700BE24E2D69400C58F7A /* API */,
@@ -136,6 +139,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		614700CE24E3714B00C58F7A /* JSON File */ = {
+			isa = PBXGroup;
+			children = (
+				614700CF24E3716100C58F7A /* albums.json */,
+			);
+			path = "JSON File";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +208,7 @@
 				614700B224E2C9D600C58F7A /* LaunchScreen.storyboard in Resources */,
 				614700AF24E2C9D600C58F7A /* Assets.xcassets in Resources */,
 				614700AD24E2C9D300C58F7A /* Main.storyboard in Resources */,
+				614700D024E3716100C58F7A /* albums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
